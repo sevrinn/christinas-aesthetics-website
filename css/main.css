@@ -215,76 +215,7 @@ a {
   border-radius: 3px;
 }
 
-/*Mobile Services*/
-#services {
-  background-color: #e6e7e0;
-  text-align: center;
-}
-
-.img-cropper {
-  width: 30vw;
-  height: 30vw;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-  border: 8px #b9cbcc solid;
-}
-
-.section-img {
-  margin: 0 auto;
-  margin-left: -25%;
-  height: 100%;
-  width: auto;
-}
-
-.center-img {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 20px auto;
-}
-
-h3 {
-  padding: 20px;
-  font-family: adobe-handwriting-ernie, sans-serif;
-  font-size: 6vw;
-}
-
-h4 {
-  padding-bottom: 20px;
-  font-family: adobe-handwriting-ernie, sans-serif;
-  font-size: 4vw;
-}
-
-h5 {
-  padding: 5px 0;
-  font-size: 3.5vw;
-  letter-spacing: 5px;
-}
-
-.facial-modules-wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-}
-.facial-service-module {
-  text-align: left;
-  width: 75%;
-  max-width: 960px;
-  margin: 5px auto;
-}
-
-.time-price {
-  font-style: oblique;
-  font-size: 3vw;
-}
-
-.service-blurb {
-  font-size: 2vw;
-}
-
-/* Mobile Hero Section */
+/* MOBILE HERO SECTION*/
 .hero-img {
   background-image: url("../img/jazmin-quaynor-8ioenvmof-I-unsplash.jpg");
   height: 100vh;
@@ -325,6 +256,77 @@ h5 {
   border-radius: 50px;
 }
 
+/*MOBILE SERVICES*/
+#services {
+  background-color: #e6e7e0;
+  text-align: center;
+}
+
+.img-cropper {
+  width: 30vw;
+  height: 30vw;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1vw #b9cbcc solid;
+}
+
+.section-img {
+  margin: 0 auto;
+  margin-left: -25%;
+  height: 100%;
+  width: auto;
+}
+
+.center-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+h3 {
+  padding: 20px;
+  font-family: adobe-handwriting-ernie, sans-serif;
+  font-size: 6vw;
+}
+
+h4 {
+  padding-bottom: 20px;
+  font-family: adobe-handwriting-ernie, sans-serif;
+  font-size: 4vw;
+}
+
+h5 {
+  padding: 5px 0;
+  font-size: 3.5vw;
+  letter-spacing: 3px;
+}
+
+.facial-modules-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+.facial-service-module {
+  text-align: left;
+  width: 75%;
+  max-width: 960px;
+  margin: 5px auto;
+}
+
+.time-price {
+  font-style: oblique;
+  font-size: 3vw;
+}
+
+.service-blurb {
+  font-size: 2vw;
+}
+
+
+
 /*Mobile Services*/
 #services {
   background-color: #e6e7e0;
@@ -376,9 +378,11 @@ h5 {
 .facial-modules-wrapper {
   width: 100%;
   display: flex;
-  flex-direction:column;
+  flex-flow: wrap;
   justify-content: center;
 }
+
+
 .facial-service-module {
   text-align: left;
   width: 75%;
@@ -414,7 +418,7 @@ h5 {
 .wax-face ul li,
 .wax-body ul li {
   font-size: 2.5vw;
-  margin: 20px 0;
+  margin: 10px 0;
   text-align: left;
   width: 75%;
 }
@@ -468,7 +472,11 @@ h5 {
     background: #576769;
     border-color: #4d5a5c;
   }
+
+  
 }
+
+
 
 /* Desktop menu */
 @media all and (min-width: 1200px) {
