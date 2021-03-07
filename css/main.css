@@ -111,6 +111,25 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  padding: 20px;
+  font-family: adobe-handwriting-ernie, sans-serif;
+  font-size: 6vw;
+  margin-top: 10px;
+}
+
+h4 {
+  padding-bottom: 20px;
+  font-family: adobe-handwriting-ernie, sans-serif;
+  font-size: 4vw;
+}
+
+h5 {
+  padding: 5px 0;
+  font-size: 3.5vw;
+  letter-spacing: 3px;
+}
+
 .menu,
 .submenu,
 .peelmenu {
@@ -174,6 +193,7 @@ a {
   display: none;
 }
 
+
 .active .item {
   display: block;
 }
@@ -216,13 +236,15 @@ a {
 }
 
 /* MOBILE HERO SECTION*/
-.hero-img {
+.hero-section {
   background-image: url("../img/jazmin-quaynor-8ioenvmof-I-unsplash.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
+  
 }
 
 .hero-text {
@@ -230,7 +252,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-size: 5vw;
+  
 
   text-align: center;
   position: absolute;
@@ -238,6 +260,10 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #4d5a5c;
+}
+
+.hero-text h2 {
+  font-size: 6vw;
 }
 .book-now-btn {
   font-family: adobe-handwriting-ernie, sans-serif;
@@ -249,11 +275,15 @@ a {
   margin: 30px;
 }
 .hero-btn {
-  
+  margin: 10px 5px;
   color: #e6e7e0;
   background: #4d5a5c;
   border: 1px #4d5a5c solid;
   border-radius: 50px;
+  font-size: 3vw;
+  padding: 10px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /*MOBILE SERVICES*/
@@ -285,23 +315,7 @@ a {
   margin: 20px auto;
 }
 
-h3 {
-  padding: 20px;
-  font-family: adobe-handwriting-ernie, sans-serif;
-  font-size: 6vw;
-}
-
-h4 {
-  padding-bottom: 20px;
-  font-family: adobe-handwriting-ernie, sans-serif;
-  font-size: 4vw;
-}
-
-h5 {
-  padding: 5px 0;
-  font-size: 3.5vw;
-  letter-spacing: 3px;
-}
+/* MOBILE FACIALS */
 
 .facial-modules-wrapper {
   width: 100%;
@@ -323,77 +337,12 @@ h5 {
 
 .service-blurb {
   font-size: 2vw;
+  padding: 10px 0;
 }
 
 
 
 /*Mobile Services*/
-#services {
-  background-color: #e6e7e0;
-  text-align: center;
-}
-
-.img-cropper {
-  width: 30vw;
-  height: 30vw;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-  border: 8px #b9cbcc solid;
-}
-
-.section-img {
-  margin: 0 auto;
-  margin-left: -25%;
-  height: 100%;
-  width: auto;
-}
-
-.center-img {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 20px auto;
-}
-
-h3 {
-  padding: 20px;
-  font-family: adobe-handwriting-ernie, sans-serif;
-  font-size: 6vw;
-}
-
-h4 {
-  padding-bottom: 20px;
-  font-family: adobe-handwriting-ernie, sans-serif;
-  font-size: 4vw;
-  text-align: center;
-}
-
-h5 {
-  padding: 5px 0;
-  font-size: 3.5vw;
-  letter-spacing: 5px;
-}
-
-.facial-modules-wrapper {
-  width: 100%;
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-}
-
-
-.facial-service-module {
-  text-align: left;
-  width: 75%;
-  max-width: 960px;
-  margin: 5px auto;
-}
-
-.time-price {
-  font-style: oblique;
-  font-size: 3vw;
-}
 
 #metabolic-peels ul {
   display: flex;
@@ -435,11 +384,21 @@ h5 {
   .logo {
     flex: 1;
   }
+
+  .logo-img {
+    height: 100px;
+  }
+  
   .item.button {
     width: auto;
     order: 1;
     display: block;
   }
+
+  .item a {
+    font-size: 30px;
+  }
+
   .toggle {
     flex: 1;
     text-align: right;
@@ -473,10 +432,14 @@ h5 {
     border-color: #4d5a5c;
   }
 
+  /* TABLET FACIALs*/
+  #facials h5 {
+    font-size: 24px;
+  }
   
 }
 
-
+/* DESKTOP STYLES */
 
 /* Desktop menu */
 @media all and (min-width: 1200px) {
@@ -549,6 +512,50 @@ h5 {
   
   .service-blurb {
     font-size: 2vw;
+  }
+
+  /*HERO SECTION*/
+
+  /* max size of here text is 72px */
+  .hero-text h2 {
+    font-size: 72px;
+  }
+
+  .hero-btn {
+    font-size: 36px;
+  }
+
+  /*SERVICES SECTION*/
+  #services h3 {
+    font-size: 71.88px;
+  }
+  
+  /* FACIALS SECTION */
+ 
+
+  .img-cropper {
+    width: 360px;
+    height: 360px;
+  }
+
+  .facial-modules-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+  }
+
+  h4 {
+    font-size: 48px;
+  }
+
+  .time-price {
+    font-size: 20px;
+  }
+
+  .service-blurb {
+    font-size: 20px;
   }
 }
 
