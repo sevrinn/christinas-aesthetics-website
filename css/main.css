@@ -205,6 +205,7 @@ h5 {
 
 /*Submenu up from mobile screens*/
 .submenu {
+  z-index: 1;
   display: none;
 }
 
@@ -342,19 +343,37 @@ h5 {
 
 
 
-/*Mobile Services*/
-
-#metabolic-peels ul {
+/* MOBILE METABOLIC PEELS */
+#metabolic-peels h4 {
+  margin-top: 40px;
+  text-align: center;
+}
+.peel-menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   margin-bottom: 40px;
+  
 }
 
-.peelmenu {
+.peel-parent {
+  
+  text-align: center;
+  
+}
+.peel-items {
+  display: inline-block;
+  
   font-size: 2.5vw;
   margin: 5px 0;
+  text-align: left;
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
 }
 
 .wax-wrapper {
@@ -457,9 +476,7 @@ h5 {
     display: block;
     width: auto;
   }
-  .button {
-    order: 2;
-  }
+  
   .submenu-active .submenu {
     display: block;
     position: absolute;
