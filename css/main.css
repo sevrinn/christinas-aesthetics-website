@@ -86,8 +86,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   /*BASIC STYLING*/
-* {
+/*
+ * BASIC STYLING
+ */
+ * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -114,19 +116,20 @@ a {
 h3 {
   padding: 20px;
   font-family: adobe-handwriting-ernie, sans-serif;
-  font-size: 6vw;
+  font-size: 30px;
   margin-top: 10px;
 }
 
 h4 {
-  padding-bottom: 20px;
+  padding: 40px 11%;
   font-family: adobe-handwriting-ernie, sans-serif;
-  font-size: 4vw;
+  font-size: 25px;
+  text-align: left;
 }
 
 h5 {
   padding: 5px 0;
-  font-size: 3.5vw;
+  font-size: 20px;
   letter-spacing: 3px;
 }
 
@@ -136,7 +139,7 @@ h5 {
   list-style-type: none;
 }
 .logo-img {
-  height: 50px;
+  height: 60px;
   width: auto;
   display: inline;
 }
@@ -159,8 +162,10 @@ h5 {
   color: #4d5a5c;
 }
 
-/*Mobile Menu*/
-/* wrapping, row-based layout for mobile so that we can display the logo and toggle button next to each other on top of the menu */
+/*
+ * MOBILE MENU 
+ */
+ /* wrapping, row-based layout for mobile so that we can display the logo and toggle button next to each other on top of the menu */
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -179,7 +184,7 @@ h5 {
 
 .toggle {
   order: 1;
-  font-size: 20px;
+  font-size: 40px;
 }
 
 .item.button {
@@ -239,7 +244,7 @@ h5 {
 /* MOBILE HERO SECTION*/
 .hero-section {
   background-image: url("../img/jazmin-quaynor-8ioenvmof-I-unsplash.jpg");
-  height: 100vh;
+  height:50vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -249,40 +254,35 @@ h5 {
 }
 
 .hero-text {
-  height: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  
-
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: #4d5a5c;
+  height: inherit;
 }
 
 .hero-text h2 {
-  font-size: 6vw;
+  font-size: 30px;
 }
 .book-now-btn {
   font-family: adobe-handwriting-ernie, sans-serif;
-  padding: 10px 0;
   color: #e6e7e0;
   background: #4d5a5c;
   border: 1px #4d5a5c solid;
   border-radius: 50px;
   margin: 30px;
+  padding: 10px 0;
 }
 .hero-btn {
-  margin: 10px 5px;
+  margin: 50px 5px 50px 5px;
   color: #e6e7e0;
   background: #4d5a5c;
   border: 1px #4d5a5c solid;
   border-radius: 50px;
-  font-size: 3vw;
-  padding: 10px;
+  font-size: 20px;
+  padding: 10px 70px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -293,13 +293,19 @@ h5 {
   text-align: center;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 .img-cropper {
-  width: 30vw;
-  height: 30vw;
+  width: 50vw;
+  height: 50vw;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-  border: 1vw #b9cbcc solid;
+  border: 2vw #b9cbcc solid;
 }
 
 .section-img {
@@ -307,6 +313,20 @@ h5 {
   margin-left: -25%;
   height: 100%;
   width: auto;
+}
+
+.section-img-about {
+  margin: 0 auto;
+  
+  height: 100%;
+  width: auto;
+}
+
+.center-img-about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
 }
 
 .center-img {
@@ -317,7 +337,13 @@ h5 {
 }
 
 /* MOBILE FACIALS */
+#facials {
+  border-bottom:1px dotted #4d5a5c;
+}
 
+.to-top::after {
+  content: "\2191";
+}
 .facial-modules-wrapper {
   width: 100%;
   display: flex;
@@ -326,27 +352,48 @@ h5 {
 }
 .facial-service-module {
   text-align: left;
-  width: 75%;
+  width: 80%;
   max-width: 960px;
   margin: 5px auto;
 }
 
 .time-price {
   font-style: oblique;
-  font-size: 3vw;
+  font-size: 20px;
 }
 
 .service-blurb {
-  font-size: 2vw;
+  font-size: 16px;
   padding: 10px 0;
+  text-align: left;
 }
 
-
-
 /* MOBILE METABOLIC PEELS */
+#metabolic-peels {
+  border-bottom:1px dotted #4d5a5c;
+  background: #b9cbcc;
+}
 #metabolic-peels h4 {
-  margin-top: 40px;
-  text-align: center;
+  padding-top: 40px 11%;
+  text-align: left;
+}
+
+.meta-peels-wrapper {
+  width: 100%;
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.meta-peels-group {
+  width: 80%;
+  margin: 5px auto;
+}
+
+.peel-time-price {
+  font-size: 20px;
 }
 .peel-menu {
   display: flex;
@@ -357,7 +404,7 @@ h5 {
   
 }
 
-.peel-parent {
+.peel-parent ul li {
   
   text-align: center;
   
@@ -365,7 +412,7 @@ h5 {
 .peel-items {
   display: inline-block;
   
-  font-size: 2.5vw;
+  font-size: 16px;
   margin: 5px 0;
   text-align: left;
 }
@@ -376,91 +423,279 @@ h5 {
   margin-bottom: 5vh;
 }
 
+/* MOBILE WAXING */
+
+#waxing {
+  border-bottom:1px dotted #4d5a5c;
+}
 .wax-wrapper {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction:column;
+  justify-content: space-around;
+  
+}
+
+.wax-group {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
+#waxing h4 {
+  margin: 20px 15%;
+}
+.wax-group h5 {
+  font-size: 20px;
+}
+.wax-group ul {
+  padding: auto;
+}
+.wax-group ul li {
+  font-size: 16px;
+  list-style: none;
+  margin: 0 auto;
+  
+}
 
-.wax-face ul li,
-.wax-body ul li {
-  font-size: 2.5vw;
-  margin: 10px 0;
+#body-treatments {
+  background-color: #b9cbcc;
+}
+#body-treatments,
+#focused-treatments {
+  border-bottom:1px dotted #4d5a5c;
+}
+
+#focused-treatments ul {
+  margin-bottom: 20px;
+}
+
+#focused-treatments li {
+  font-size: 16px;
+}
+ #focused-treatments span {
+   font-weight: 800;
+ }
+
+ /* MOBILE ABOUT */
+#about {
+  text-align: center;
+  background-color: #e6e7e0;
+  
+}
+
+#about h3 {
+  margin-top: 0;
+}
+
+.about-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-wrapper p {
   text-align: left;
-  width: 75%;
+  font-size: 16px;
+  line-height: 1.5em;
+  padding-bottom: 10px;
 }
 
-/* mobile min font size*/
-@media screen and (max-width:575px) {
-	body{ font-size: 12px; }
+.about-wrapper p:first-child {
+  margin-top: 40px;
 }
-/* Tablet menu */
-@media all and (min-width: 768px) {
-  .menu {
+
+.about-wrapper p:last-child {
+  margin-bottom: 40px;
+}
+
+/* MOBILE CONTACT */
+  #contact {
+    background-color:#b9cbcc;
+    color:#4d5a5c;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+
   }
-  .logo {
-    flex: 1;
+  #contact h4 {
+    text-align: center;
+    
+  }
+  .contact-wrapper {
+    width: 80%;
+    padding: 0 auto;
+    text-align: center;
   }
 
-  .logo-img {
-    height: 100px;
-  }
-  
-  .item.button {
-    width: auto;
-    order: 1;
-    display: block;
-  }
 
-  .item a {
-    font-size: 30px;
-  }
-
-  .toggle {
-    flex: 1;
-    text-align: right;
-    order: 2;
-  }
-
-  /* Button up from tablet screen*/
-  .menu li.button a {
-    padding: 10px 15px;
-    margin: 5px 0;
-  }
-  .button a {
-    color: #e6e7e0;
-    background: #4d5a5c;
-    border: 1px #4d5a5c solid;
-    border-radius: 50px;
-  }
-  .button.secondary {
-    border: 0;
-  }
-  .button.secondary a {
+  /* MOBILE FOOTER */
+  footer {
+    background-color: #e6e7e0;
     color: #4d5a5c;
-    background: transparent;
-    border: 1px #4d5a5c solid;
-  }
-  .button a:hover {
-    text-decoration: none;
-  }
-  .button:not(.secondary) a:hover {
-    background: #576769;
-    border-color: #4d5a5c;
+    text-align: center;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  /* TABLET FACIALs*/
-  #facials h5 {
-    font-size: 24px;
-  }
+/*
+ * TABLET MENU 
+ */
+ @media all and (min-width: 768px) {
+
+    /* TABLET MENU */
+    .menu {
+      justify-content: center;
+    }
+    .logo {
+      flex: 1;
+    }
+    .logo-img {
+      height: 100px;
+    }
+    
+    .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+    }
+
+    .item a {
+      font-size: 30px;
+    }
+
+    .toggle {
+      flex: 1;
+      text-align: right;
+      order: 2;
+    }
+
+    /* Button up from tablet screen*/
+    .menu li.button a {
+      padding: 10px 15px;
+      margin: 5px 0;
+    }
+    .button a {
+      color: #e6e7e0;
+      background: #4d5a5c;
+      border: 1px #4d5a5c solid;
+      border-radius: 50px;
+    }
+    .button.secondary {
+      border: 0;
+    }
+    .button.secondary a {
+      color: #4d5a5c;
+      background: transparent;
+      border: 1px #4d5a5c solid;
+    }
+    .button a:hover {
+      text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+      background: #576769;
+      border-color: #4d5a5c;
+    }
+    
+    h3 {
+      font-size: 35px;
+    }
+    /* TABLET HERO */
+    .hero-text h2 {
+      font-size: 50px;
+    }
+
+    .img-cropper {
+      width: 300px;
+      height: 300px;
+      border: 1vw #b9cbcc solid;
+    }
+    /* TABLET FACIALS*/
+    h5 {
+      font-size: 24px;
+    }
+
+    /* TABLET METABOLIC PEELS */
+
+    .meta-peels-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .meta-peels-group {
+      width: 80%;
+      margin: 5px auto;
+      max-width: 960px;
+
+    }
+    
+    #metabolic-peels .service-blurb {
+      width: 75%;
+      margin: 5px auto;
+    }
+
+    .peel-time-price {
+      font-size: 30px;
+    }
+
+    /* TABLET WAXING */
+    #waxing h4 {
+      text-align: center;
+    }
+    .wax-wrapper {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction:row;
+      justify-content: center;
+      max-width: 960px;
+    }
+
+    .wax-group {
+      width: 25%;
+      margin: 0 auto;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    /*TABLET FOCUSED TREATMENTS*/
+    .focused-wrapper {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction:row;
+      justify-content: center;
+      align-items: flex-start;
+      max-width: 960px;
+    }
+
+    .focused-group {
+      width: 80%;
+      margin: 0 auto;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
   
-}
+    }
 
-/* DESKTOP STYLES */
-
-/* Desktop menu */
+ /*
+ * DESKTOP MENU 
+ */
 @media all and (min-width: 1200px) {
   .menu {
     align-items: flex-start;
@@ -491,6 +726,7 @@ h5 {
     border-radius: 0;
   }
 
+  /*Desktop Styles*/
   h3 {
     padding: 20px;
     font-family: adobe-handwriting-ernie, sans-serif;
@@ -498,17 +734,23 @@ h5 {
   }
   
   h4 {
-    padding-bottom: 20px;
+    padding-bottom: 20px 0;
     font-family: adobe-handwriting-ernie, sans-serif;
-    font-size: 4vw;
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    
   }
   
   h5 {
     padding: 5px 0;
-    font-size: 3.5vw;
+    font-size: 30px;
     letter-spacing: 5px;
   }
   
+  .hero-section{
+    height: 50vh;
+  }
   .facial-modules-wrapper {
     width: 100%;
     display: flex;
@@ -528,12 +770,13 @@ h5 {
   }
   
   .service-blurb {
-    font-size: 2vw;
+    font-size: 16px;
+    
   }
 
-  /*HERO SECTION*/
+  /* DESKTOP HERO SECTION*/
 
-  /* max size of here text is 72px */
+  /* max size of hero text is 72px */
   .hero-text h2 {
     font-size: 72px;
   }
@@ -547,19 +790,19 @@ h5 {
     font-size: 71.88px;
   }
   
-  /* FACIALS SECTION */
+  /* DESKTOP FACIALS SECTION */
  
 
   .img-cropper {
-    width: 360px;
-    height: 360px;
+    width: 300px;
+    height: 300px;
+    border: 1vw #b9cbcc solid;
   }
 
   .facial-modules-wrapper {
     width: 100%;
     display: flex;
     flex-direction: row;
-    
     justify-content: center;
   }
 
@@ -574,12 +817,73 @@ h5 {
   .service-blurb {
     font-size: 20px;
   }
+
+  /* DESKTOP METABOLIC PEELS */
+
+  .meta-peels-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .meta-peels-group {
+    width: 80%;
+    margin: 5px auto;
+    max-width: 960px;
+
+  }
+  
+  #metabolic-peels .service-blurb {
+    width: 75%;
+    margin: 5px auto;
+  }
+
+  .peel-time-price {
+    font-size: 30px;
+  }
+
+  /* DESKTOP WAXING */
+  .wax-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .wax-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 5px auto;
+    max-width: 960px;
+  }
+
+  .wax-group h5 {
+    font-size: 30px;
+  }
+
+  .wax-group ul li {
+    font-size: 20px;
+  }
+
+  /* DESKTOP BODY TREATMENTS */
+
+  /*  */
+
+  /* DESKTOP CONTACT */
+  #contact h4 {
+    text-align: center;
+    font-size: 48px;
+  }
+
+  .quform-theme-light-light .quform-element > .quform-spacer > label {
+    font-size: 20px;
+  }
 }
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -753,3 +1057,4 @@ h5 {
     page-break-after: avoid;
   }
 }
+
